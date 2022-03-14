@@ -1,0 +1,127 @@
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #585858;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(76, 255, 255);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(41, 41, 41);
+}
+
+.maincontainer {
+    display: block;
+    position: absolute;
+    width: 99%;
+    height: auto;
+    background-color: rgba(48, 48, 48, 0.92);
+    border-radius: 1.3rem;
+}
+
+#topbar {
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    margin: auto;
+    margin-top: 1%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 3rem 3rem 0 0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.buttons {
+    display: block;
+    width: 12%;
+    margin: 0.5% auto;
+    background-color: rgba(107, 107, 107, 0.8);
+    border: solid;
+    color: white;
+    font-size: 2.5vmin;
+    border-color: white;
+    border-radius: 0.5rem;
+}
+
+.buttons:hover {
+    color: black;
+    background-color: rgba(145, 143, 143, 0.9);
+}
+
+#aktions {
+    background-color: rgba(211, 29, 29, 0.5);
+}
+
+#aktions:hover {
+    color: greenyellow;
+    background-color: rgba(211, 29, 29, 0.8);
+}
+
+.site {
+    display: block;
+    position: relative;
+    width: 97%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 1%;
+    border: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 0 0 1.3rem 1.3rem;
+}
+
+.headerin {
+    position: absolute;
+    width: auto;
+    margin: 0.5% 45%;
+    background-color: rgb(177, 177, 177);
+    text-align: center;
+    font-size: 4.5vmin;
+    border-radius: 0.5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+    margin: auto;
+}
+
+.content .bild {
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 4%;
+    margin-bottom: 1%;
+    border-radius: 3rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.45);
+}
+.content .homebild {
+    width: 28%;
+    margin: auto;
+    border-radius: 3rem;
+    text-align: center;
+    color: white;
+}
+
+p {
+    font-size: 3vmin;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content #hometext {
+    font-size: 5.8vmin;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    width: 100%;
+    border-radius: 3rem 3rem 0 0;
+}

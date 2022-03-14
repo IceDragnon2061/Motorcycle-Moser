@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle Moser</title>
+    <link rel="icon" href="media/Logo.png">
+    <style>
+        body {
+            background-image: url("media/Background.png");
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body onload="start()">
+    <div class="maincontainer">
+        <div id="topbar">
+            <input type="button" id="Home" class="buttons" value="Home" onclick="show('home')">
+            <input type="button" class="buttons" value="Neuerscheinungen" onclick="show('new')">
+            <input type="button" id="aktions" class="buttons" value="Aktionen" onclick="show('aktion')">
+            <input type="button" class="buttons" value="Sportmaschienen" onclick="show('sport')">
+            <input type="button" class="buttons" value="Cross/Supermoto" onclick="show('cross')">
+            <input type="button" class="buttons" value="Chopper" onclick="show('chopper')">
+            <input type="button" class="buttons" value="Roller" onclick="show('roller')">
+        </div>
+        <div class="site" id="home">
+            <div class="content">
+                <div class="homebild">
+                    <img src="media/Logo.png" title="HOME">
+                    <p id="hometext">Wilkommen bei Motorcycle Moser</p>
+                </div>
+            </div>
+        </div>
+        <div class="site" id="new">
+            <div class="header">
+                <span class="headerin">Neuerscheinung</span>
+            </div>
+            <div class="content">
+                <div class="bild">
+                    <img src="media/Confederate F131 Hellcat Combat.jpg" title="Confederate F131 Hellcat Combat">
+                    <p>Confederate F131 Hellcat Combat</p>
+                    <p>270 KM/H</p>
+                    <p>$250.000</p>
+                </div>
+                <div class="bild">
+                    <img src="media/Honda RC213V-S 2018.jpg" title="Honda RC213V-S 2018">
+                    <p>Honda RC213V-S 2018</p>
+                    <p>230 KM/H</p>
+                    <p>$152.000</p>
+                </div>
+            </div>
+        </div>
+        <div class="site" id="aktion">
+            <div class="header">
+                <span class="headerin">Aktionen</span>
+            </div>
+            <div class="content">
+                <div class="bild">
+                    <img src="media/Dinka Akuma.jpg" title="Dinka Akuma">
+                    <p>Dinka Akuma</p>
+                    <p>185 KM/H</p>
+                    <p>$32.000</p>
+                </div>
+                <div class="bild">
+                    <img src="media/Shitzu Hakuchou.jpg" title="Shitzu Hakuchou">
+                    <p>Shitzu Hakuchou</p>
+                    <p>195 KM/H</p>
+                    <p>$40.000</p>
+                </div>
+            </div>
+        </div>
+        <div class="site" id="sport">
+            <div class="header">
+                <span class="headerin">Sportmaschienen</span>
+            </div>
+            <div class="content">
+                <div class="bild">
+                    <img src="media/Diabolus 2.jpg" title="Diabolus 2">
+                    <p>Diabolus 2</p>
+                    <p>175 KM/H</p>
+                    <p>$35.000</p>
+                </div>
+                <div class="bild">
+                    <img src="media/Honda CB650f Repsol.jpg" title="Honda CB650f Repsol">
+                    <p>Honda CB650f Repsol</p>
+                    <p>330 KM/H</p>
+                    <p>$370.000</p>
+                </div>
+                <div class="bild">
+                    <img src="media/Pegassi Bati 801.jpg" title="Bati 801">
+                    <p>Bati 801</p>
+                    <p>180 KM/H</p>
+                    <p>$28.000</p>
+                </div>
+                <div class="bild">
+                    <img src="media/Pegassi Bati 801 RR.jpg" title="Bati 801 RR">
+                    <p>Bati 801 RR</p>
+                    <p>180 KM/H</p>
+                    <p>$31.000</p>
+                </div>
+            </div>
+        </div>
+        <div class="site" id="cross">
+            <div class="header">
+                <span class="headerin">Cross/Supermoto</span>
+            </div>
+            <div class="content">
+                <div class="bild">
+                    <img src="media/Maibatsu Sanchez.jpg" title="Maibatsu Sanchez">
+                    <p>Maibatsu Sanchez</p>
+                    <p>170 KM/H</p>
+                    <p>$26.000</p>
+                </div>
+                <div class="bild">
+                    <img src="media/Honda Xre 300 2016.jpg" title="Honda Xre 300 2016">
+                    <p>Honda Xre 300 2016</p>
+                    <p>280 KM/H</p>
+                    <p>$250.000</p>
+                </div>
+                <div class="bild">
+                    <img src="media/Nagasaki BF-400.jpg" title="Nagasaki BF-400">
+                    <p>Nagasaki BF-400</p>
+                    <p>170 KM/H</p>
+                    <p>$9.500</p>
+                </div>
+            </div>
+        </div>
+        <div class="site" id="chopper">
+            <div class="header">
+                <span class="headerin">Chopper</span>
+            </div>
+            <div class="content">
+                <div class="bild">
+                    <img src="media/Harley Davidson V-Rod.jpg" title="Harley Davidson V-Rod">
+                    <p>Harley Davidson V-Rod</p>
+                    <p>240 KM/H</p>
+                    <p>$150.000</p>
+                </div>
+                <div class="bild">
+                    <img src="media/Indian Chief Dark Horse 2019.jpg" title="Indian Chief Dark Horse 2019">
+                    <p>Indian Chief Dark Horse 2019</p>
+                    <p>130 KM/H</p>
+                    <p>$100.000</p>
+                </div>
+            </div>
+        </div>
+        <div class="site" id="roller">
+            <div class="header">
+                <span class="headerin">Roller</span>
+            </div>
+            <div class="content">
+                <div class="bild">
+                    <img src="media/Faggio, Faggio 2, Faggio 3.jpg" title="Faggio, Faggio 2, Faggio 3">
+                    <p>Confederate F131 Hellcat Combat</p>
+                    <p>? KM/H</p>
+                    <p>$15.000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
